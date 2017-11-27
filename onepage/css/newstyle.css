@@ -1,0 +1,54 @@
+ *{
+    box-sizing: border-box;
+    border: 1px solid pink;
+} 
+
+html{
+    height: 1000vh;
+}
+.cus-navbar{
+    background-image: url('/img/nav.png');
+    background-size: cover;
+}
+
+.about{
+    width: 100%;
+    height:50vh ;
+    /* background-color: peachpuff; */
+}
+h4{
+    text-align: -webkit-center;
+    margin-top: 30px;
+}
+.about-text{
+    text-align: -webkit-center;
+    line-height: 4;
+    font-family: 微軟正黑體;
+    font-size: 20px;
+}
+
+.ground-body{
+    position: absolute;
+    background-color: burlywood;
+    height: 100vh;
+    width: 100%;
+    
+} 
+.ground-img{
+    width: 30vw;
+    height: 28.454vw;
+    background-size:cover;
+    background-position: center; 
+    
+}
+.ground-img1{
+    background-image: url('/img/ground/ktichen1-1.png')
+}
+.ground-img2{
+    background-image: url('/img/ground/library1-1.png');
+    /* margin:0 30px; */
+    
+}
+.ground-img3{
+    background-image: url('/img/ground/loung2-1.png')
+}

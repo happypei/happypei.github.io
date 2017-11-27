@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  
+    <!-- <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css/unslider-dots.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="stylesheet" href="/css/onestyle.css">    
+    
+</head>
+<body>
+   <div class="navbar">
+    <div class="navbar_item">
+        <li><a href="">關於漫步</a></li>
+        <li><a href="">漫步環境</a></li>
+        <li><a href="">最新消息</a></li>
+        <li><a href="">漫步客房</a></li>
+        <li><a href="">開始漫步</a></li>
+        <li><a href="">漫步交通</a></li>
+        <li><a href="">漫步景點</a></li>
+        <li><a href="">聯絡漫步</a></li>
+    </div>
+   </div>
+
+   <div class="banner">
+        <img id="mySlides_one" class="mySlides">
+        <img id="mySlides_two" class="mySlides">
+        <img id="mySlides-three" class="mySlides">
+        <img id="mySlides_four" class="mySlides">
+        <img id="mySlides_five" class="mySlides">  
+        <div onclick="plusIndex(1)" class="toggle_right"></div>
+        <div onclick="plusIndex(-1)" class="toggle_left"></div>
+        <ul id="tour_column_item">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+    <script>
+        // Carousel toggle and autoslides
+        var indexs = 1;
+        var inde = 1;
+        function plusIndex(n) {
+            indexs = indexs + n;
+            inde = inde + n;
+            toggleSlides(indexs);
+            tourColumn(inde);
+        }
+
+        toggleSlides(1);
+
+            function toggleSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                // console.log(slides);
+                if (n > slides.length) { indexs = 1 };
+                if (n < 1) { indexs = slides.length };
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[indexs-1].style.display = "block";
+            }
+
+            autoslides();
+            function autoslides() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                if (indexs > x.length) { indexs = 1 }
+                x[indexs - 1].style.display = "block";
+                indexs++;
+                setTimeout(autoslides, 2000);
+            }   
+
+            tourColumn(1);
+                function tourColumn(n) {
+                    var i;
+                    var dot = document.getElementsByClassName("dot");
+                    if (n > dot.length) { inde = 1 };
+                    if (n < 1) { inde = dot.length };
+                    for (i = 0; i < dot.length; i++) {
+                        dot[i].style.backgroundColor = "#898989";
+                    }
+                    dot[inde - 1].style.backgroundColor = "#ffffff";
+                }
+
+            autoColumn();
+            function autoColumn() {
+                var i;
+                var dot = document.getElementsByClassName("dot");
+                for (i = 0; i < dot.length; i++) {
+                    dot[i].style.backgroundColor = "#898989";
+                }
+                if (inde > dot.length) { inde = 1 }
+                dot[inde - 1].style.backgroundColor = "#ffffff";
+                inde++;
+                setTimeout(autoColumn, 2000);
+            }   
+    </script>          
+   </div>
+
+   <!-- <div class="title a">
+       <li>
+           關於漫步
+       </li>
+   </div>
+   <div class="texta">
+       <pre>
+         遠離塵囂，按下時間暫停，漫步地走進小時空…… 
+         靜靜地欣賞每個四季，慢慢地呼吸每個時刻。 
+         有沒有在哪個時刻…你按下了，於是，漫步了。
+
+       </pre>
+   </div> -->
+
+
+
+   
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/unslider-min.js"></script>
+    
+    <!-- <script>
+        jQuery(document).ready(function ($) {
+            $('.banner').unslider({
+                arrows: {
+                    // Unslider default behaviour
+                    prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-left fa-5x" aria-hidden="true"></i></a>',
+                    next: '<a class="unslider-arrow next"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></a>',
+                }
+            });
+
+        });
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+body{
+    margin: 0;
+}
+.navbar{
+    height: 200px;
+    width: 100%;
+    background-image: url("/img/nav-1.png");
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.navbar_item{
+    /* background-color: red; */
+    height:50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.navbar_item li{
+    font-family: 微軟正黑體;
+    font-size:20px;
+    flex: 1 0 0;
+    display: block;
+}
+.navbar_item li a {
+    text-decoration:none;
+}
+ .banner{
+    height: calc(100vh - 200px);
+    width: 100%;
+    position: relative;
+    background-color: black; 
+}
+.mySlides{
+    width: 100%;
+    height: calc(100vh - 200px);
+    position: absolute;
+} 
+#mySlides_one{
+    background-image: url('/img/環境-裁/loung1.png');
+    background-size: 100% 100%; 
+}
+#mySlides_two{
+    background-image: url('/img/環境-裁/bed1.png');
+    background-size: 100% 100%; 
+}
+#mySlides-three{
+    background-image: url('/img/環境-裁/bed2.png');
+    background-size: 100% 100%; 
+}
+#mySlides_four{
+    background-image: url('/img/環境-裁/kichen1.png');
+    background-size: 100% 100%; 
+}
+#mySlides_five{
+    background-image: url('/img/環境-裁/travel1.png');
+    background-size: 100% 100%; 
+}
+.toggle_right, .toggle_left{
+    height: 176px;
+    width: 100px;
+    /* background-color: gray; */
+    position: absolute;
+    top: 140px;
+    background-repeat: no-repeat;
+}
+
+.toggle_right{
+    right:10px;
+    background-image: url('/img/mark/right.png')
+}
+.toggle_left{
+    left: 10px;
+    background-image: url('/img/mark/left.png')
+    
+} 
+#tour_column_item{
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    
+}
+.dot{
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(10, 10, 10);
+    display: inline-block; 
+}  
