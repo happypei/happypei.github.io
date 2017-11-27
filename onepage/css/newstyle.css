@@ -7,7 +7,7 @@ html{
     height: 1000vh;
 }
 .cus-navbar{
-    background-image: url('/img/nav.png');
+    background-image: url('../img/nav.png');
     background-size: cover;
 }
 
@@ -42,13 +42,13 @@ h4{
     
 }
 .ground-img1{
-    background-image: url('/img/ground/ktichen1-1.png')
+    background-image: url('../img/ground/ktichen1-1.png')
 }
 .ground-img2{
-    background-image: url('/img/ground/library1-1.png');
+    background-image: url('../img/ground/library1-1.png');
     /* margin:0 30px; */
     
 }
 .ground-img3{
-    background-image: url('/img/ground/loung2-1.png')
+    background-image: url('../img/ground/loung2-1.png')
 }
