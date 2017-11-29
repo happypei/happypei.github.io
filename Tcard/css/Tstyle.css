@@ -1,0 +1,89 @@
+*{
+
+}
+html body{
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(154, 158, 130);
+    background-image: url("/img/0.jpg");
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    
+} 
+.card{
+    height: 600px;
+    width:800px;
+    background-color: rgb(233, 210, 210);    
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 60px;
+    overflow: hidden; 
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.left{
+    height: 100%;
+    width: 30%;
+    background-image: url("/img/7.jpg");
+    background-size: cover;
+    background-position:40%;
+    background-repeat: no-repeat;
+    /* background-color:#89c0ce; */
+    float:left;
+    
+}
+.right{
+    height: 100%;
+    width: 70%;
+    background-image: url("/img/3.jpg");
+    background-size: cover;
+    /* background-color: #8dbeca; */
+    float:left;
+    box-sizing: border-box;
+    padding: 30px;
+    
+}
+.smalltitle{
+    font-family: 微軟正黑體;
+    font-size: 14px;
+    color: #083a2fa8;
+    margin-left: 20px;
+}
+pre{
+    line-height: 2;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+
+}
+h4{
+    color: rgb(3, 52, 80);
+}
+ul{
+    padding: 0;
+}
+ul li:hover{
+     background-color:white;
+     border: 1px solid skyblue;
+     color: rgb(1, 1, 17);
+     transition-duration:0.5s;  
+
+}
+ul li{
+    display:inline-block;
+    border: 1px solid skyblue;
+    background-color: rgba(16, 123, 150, 0.459);
+    color: rgb(241, 240, 240);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: 微軟正黑體;
+
+}
+ul li a{
+    text-decoration:none;
+    color: rgb(3, 13, 156);
+}
