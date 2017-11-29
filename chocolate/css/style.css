@@ -1,0 +1,71 @@
+*{
+   /* border: 1px solid black; */
+  
+}
+html body{
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(48, 11, 11);
+} 
+.card{
+    height: 600px;
+    width:800px;
+    background-color: rgb(233, 210, 210);    
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden; 
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.left{
+    height: 100%;
+    width: 30%;
+    background-image: url("../img/01.jpg");
+    background-size: cover;
+    float:left;
+    
+}
+.right{
+    height: 100%;
+    width: 70%;
+    float:left;
+    box-sizing: border-box;
+    padding: 30px;
+    font-family: 微軟正黑體;
+}
+.smalltitle{
+    font-family: 微軟正黑體;
+    font-size: 12px;
+    color: #888888;
+    margin-left: 20px;
+}
+p{
+    line-height: 2;
+}
+h4{
+    color: brown;
+}
+ul{
+    padding: 0;
+}
+ul li:hover{
+     background-color:white;
+     border: 1px solid brown;
+     color: brown;
+     transition-duration:0.5s;  
+
+}
+ul li{
+    display:inline-block;
+    border: 1px solid brown;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+}
